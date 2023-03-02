@@ -2647,7 +2647,7 @@ class LogoutSyncFragment : BaseFragment(), View.OnClickListener {
     }
 
     //============================================================Update Gps Status============================================================//
-    /*private fun callUpdateGpsStatusApi(list: List<GpsStatusEntity>) {
+    private fun callUpdateGpsStatusApi(list: List<GpsStatusEntity>) {
 
         //(mContext as DashboardActivity).showSnackMessage("Syncing Gps")
 
@@ -2756,10 +2756,10 @@ class LogoutSyncFragment : BaseFragment(), View.OnClickListener {
                             }
                         })
         )
-    }*/
+    }
 
     // 3.0 LogoutSyncFragment AppV 4.0.7 saheli 21-01-2023  mantis 0025685 start
-    private fun callUpdateGpsStatusApi(list: List<GpsStatusEntity>) {
+   /* private fun callUpdateGpsStatusApi(list: List<GpsStatusEntity>) {
         var updateGpsReq = UpdateGpsInputListParamsModel()
         for(i in 0..list.size-1){
             var obj = Gps_status_list()
@@ -2883,7 +2883,7 @@ class LogoutSyncFragment : BaseFragment(), View.OnClickListener {
 //                    }
                 })
         )
-    }
+    }*/
     //============================================================Update Gps Status============================================================//
 
 

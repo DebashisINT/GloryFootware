@@ -639,7 +639,7 @@ open class BaseActivity : AppCompatActivity(), GpsStatusDetector.GpsStatusDetect
 
 
 
-/* private fun callUpdateGpsStatusApi(list: List<GpsStatusEntity>) {
+private fun callUpdateGpsStatusApi(list: List<GpsStatusEntity>) {
 
     val updateGps = UpdateGpsInputParamsModel()
     updateGps.date = list[i].date
@@ -688,10 +688,10 @@ open class BaseActivity : AppCompatActivity(), GpsStatusDetector.GpsStatusDetect
                         }
                     })
     )
-}*/
+}
 
     // 3.0 BaseActivity AppV 4.0.7  mantis gps with list issue 0025685
-    private fun callUpdateGpsStatusApi(list: List<GpsStatusEntity>) {
+   /* private fun callUpdateGpsStatusApi(list: List<GpsStatusEntity>) {
 
         var updateGpsReq = UpdateGpsInputListParamsModel()
         for(i in 0..list.size-1){
@@ -748,7 +748,7 @@ open class BaseActivity : AppCompatActivity(), GpsStatusDetector.GpsStatusDetect
 //                    }
                 })
         )
-    }
+    }*/
 
 @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 private fun calllogoutApi(user_id: String, session_id: String) {
